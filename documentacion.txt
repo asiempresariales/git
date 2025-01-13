@@ -1,1 +1,43 @@
-git init        //iniicaliza un repositorio nuevo
+git —version 
+
+git init                //iniicaliza un repositorio en local nuevo
+
+git remote add origin http://
+git branch -M main      // renombra la rama en la que se encuentra por main
+git push -u origin main // subir la rama y establecer el origen como main
+
+git clone
+
+git add .               // agrega los archivos al staging area donde se almacenan los archivos de forma temporal
+git commit -m "nombre"  // genera la instantanea
+git push                // sube los cambios
+git pull                //traer los cambios que estan en remoto
+
+git status                      //te dice en que rama esta 
+git status -s                   // para ver los archivos que tienen un seguimiento  pero no aparecen los que ya están en el repositorio
+
+
+git checkout --.                //restablece la ultima fotografia tomada en la rama
+
+git checkout                    // cambiar de rama  
+git branch new_branch           //crea una nueva rama
+git checkout -b “nombre_rama”   //crea una rama y te pasa a ella
+
+
+git log —oneline            // para ver que tenemos agregado  
+
+git reset —hard 990d4dc     // restaurar una instantanea
+
+
+git remote -v           //Enumerar tus remotos existentes a fin de obtener el nombre de los remotos que deseas cambiar.
+
+
+//Cambie la dirección URL del repositorio remoto de SSH a HTTPS con el comando git remote set-url
+git remote set-url origin https://github.com/enriqueasc/cicloDeVidaSW.git
+
+
+git fetch
+git merge
+git-rebase
+git-tag
+
